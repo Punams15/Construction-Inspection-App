@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Inspection App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Construction Inspection App</h1>
+
+        <div class="inspection-form">
+            <input type="text" id="item" placeholder="Inspection Item (e.g., Roof)">
+            <select id="status">
+                <option value="Pass">Pass</option>
+                <option value="Fail">Fail</option>
+            </select>
+            <input type="text" id="comments" placeholder="Comments (optional)">
+            <button onclick="addInspection()">Add Inspection</button>
+        </div>
+
+        <div class="inspection-list-section">
+            <h2>Inspection Report</h2>
+            <div id="inspection-list"></div>
+            <button onclick="downloadReport()">Download Report</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
